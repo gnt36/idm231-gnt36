@@ -41,6 +41,7 @@ a#home {
 a#help {
     color: var(--color-light);
     text-align: end;
+    padding-right: 16px;
     text-decoration: none;
 }
 
