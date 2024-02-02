@@ -1,0 +1,66 @@
+* {box-sizing: border-box;}
+
+/* Add in fonts*/
+
+html {
+    --color-lightPurple: #9C8C9C;
+    --color-darkPurple: #453E45;
+    --color-light: #fafafa;
+    --color-dark: #131313;
+    /* Add in font thingys*/
+}
+
+body {
+    background-color: var(--color-lightPurple);
+    color: var(--color-dark);
+    /* font-family*/
+    margin: 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body nav {
+    background-color: var(--color-darkPurple);
+    z-index: 1;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0; 
+}
+
+a#home {
+    color: var(--color-light);
+    padding-left: 16px;
+    text-decoration: none;
+}
+
+a#help {
+    color: var(--color-light);
+    text-align: end;
+    text-decoration: none;
+}
+
+main {
+    margin: 65px 35px 45px;
+    max-width: 1100px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 0px;
+}
+
+footer {
+    background-color: var(--color-darkPurple);
+
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    color: var(--color-light);
+    padding-left: 16px;
+}
