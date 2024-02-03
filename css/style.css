@@ -34,15 +34,18 @@ nav {
     padding-bottom: 16px;
 }
 
+nav div a {
+    display: grid;
+}
+
 a#home {
     color: var(--color-light);
-    padding-left: 16px;
+    padding-left: 16px;    
     text-decoration: none;
 }
 
 a#help {
     color: var(--color-light);
-    text-align: end;
     padding-right: 16px;
     text-decoration: none;
 }
