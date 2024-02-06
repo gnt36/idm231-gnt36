@@ -27,11 +27,11 @@ body nav {
 }
 
 nav {
-    position: fixed;
+    position: static;
     width: 100%;
     top: 0;
-    padding-top: 16px;
-    padding-bottom: 16px;
+
+    font-size: 24px;
 }
 
 nav ul li {
@@ -55,7 +55,6 @@ nav ul li a#help {
     justify-items: end;
 
     padding-right: 32px;
-
 }
 
 main {
@@ -76,4 +75,7 @@ footer {
 footer p {
     color: var(--color-light);
     padding-left: 16px;
+
+    font-size: 16px;
 }
+
