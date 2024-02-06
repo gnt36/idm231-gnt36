@@ -32,10 +32,9 @@ nav {
     top: 0;
     padding-top: 16px;
     padding-bottom: 16px;
-}
 
-nav div a {
     display: grid;
+    justify-items: space-between;
 }
 
 a#home {
