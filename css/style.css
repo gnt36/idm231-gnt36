@@ -68,6 +68,7 @@ main {
 footer {
     background-color: var(--color-darkPurple);
 
+    position: static;
     bottom: 0;
     width: 100%;
 }
