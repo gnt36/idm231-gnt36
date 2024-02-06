@@ -32,21 +32,30 @@ nav {
     top: 0;
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+nav ul li {
+    display: grid;
+    grid-template-columns: auto auto;
+
+
+    column-gap: 60px;
+}
+
+nav ul li a#home {
+    color: var(--color-light);
+    text-decoration: none;
+}
+
+nav ul li a#help {
+    color: var(--color-light);
+    text-decoration: none;
 
     display: grid;
-    justify-items: space-between;
-}
+    justify-items: end;
 
-a#home {
-    color: var(--color-light);
-    padding-left: 16px;    
-    text-decoration: none;
-}
+    padding-right: 32px;
 
-a#help {
-    color: var(--color-light);
-    padding-right: 16px;
-    text-decoration: none;
 }
 
 main {
