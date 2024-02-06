@@ -2,12 +2,28 @@
 
 /* Add in fonts*/
 
+@font-face {
+    font-family: 'olympic';
+    src: url('fonts/OLYMB___.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lumina';
+    src: url('fonts/LUMINA.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     --color-lightPurple: #9C8C9C;
     --color-darkPurple: #453E45;
     --color-light: #fafafa;
     --color-dark: #131313;
     /* Add in font thingys*/
+    --font-special: 'olympic', 'Times New Roman', Times, serif;
+    --font--normal: 'lumina', 'Times New Roman', Times, serif;
 }
 
 body {
@@ -38,6 +54,7 @@ nav ul li {
     display: grid;
     grid-template-columns: auto auto;
 
+    font-family: var(--font--normal);
 
     column-gap: 60px;
 }
@@ -59,16 +76,22 @@ nav ul li a#help {
 
 main {
     margin: 65px 35px 45px;
-
+    
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-column-gap: 0px;
+    grid-gap: 48px;
+} 
+
+button {
+    border: none;
+    padding: 0px;
+
+    display: contents;
 }
 
 footer {
     background-color: var(--color-darkPurple);
-
-    position: static;
+    
     bottom: 0;
     width: 100%;
 }
@@ -76,7 +99,14 @@ footer {
 footer p {
     color: var(--color-light);
     padding-left: 16px;
-
+    font-family: var(--font--normal);
     font-size: 16px;
 }
 
+footer.index {
+    position: static;
+}
+
+footer.help {
+    position: fixed;
+}
