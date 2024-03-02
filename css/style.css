@@ -64,14 +64,19 @@ nav ul li a#home {
     text-decoration: none;
 }
 
-nav ul li a#help {
-    color: var(--color-light);
-    text-decoration: none;
-
+nav ul li button#help {
     display: grid;
     justify-items: end;
 
     padding-right: 32px;
+
+    background-color: var(--color-darkPurple);
+    color: var(--color-light);
+
+    font-family: var(--font--normal);
+    font-size: 24px;
+
+    border: none;
 }
 
 main {
@@ -82,11 +87,33 @@ main {
     grid-gap: 48px;
 } 
 
-button {
+#helpInstructions {
+    background-color: var(--color-darkPurple);
+    font-family: var(--font--normal);
+    color: var(--color-light);
+    font-size: 1.5rem;
+
+    margin: auto;
+
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+#xbutton {
     border: none;
     padding: 0px;
 
-    display: contents;
+    background-color: var(--color-darkPurple);
+    color: var(--color-light);
+
+    font-family: var(--font--normal);
+    font-size: 24px;
+
+    display: flex;
+    
+
+
 }
 
 footer {
