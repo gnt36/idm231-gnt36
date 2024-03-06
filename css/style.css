@@ -96,7 +96,7 @@ main {
     margin: auto;
 
     display: grid;
-    grid-template-rows: auto end;
+    grid-template-rows: auto auto;
     text-align: center;
 }
 
