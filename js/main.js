@@ -2,6 +2,8 @@ console.log('hello does this work?');
 
 const instr = document.getElementById('helpInstructions');
 
+const btn = document.querySelector('#xbutton');
+
 function hideInstr() {   
    if (instr) {
         instr.style.display = 'none';
@@ -10,38 +12,21 @@ function hideInstr() {
 
 hideInstr();
 
-function showInstr() {
-    console.log('hi');
-    if (instr) {
-        instr.style.display = 'block';
-    } 
-}
-
-function createButton() {
-    const btn = document.createElement('button');
-    btn.id = 'xbutton';
-    btn.innerHTML = "x";
-    document.body.appendChild(btn);
-}
-
-createButton();
-
-function visibilityBtn() {
+function visibility() {
     if (!instr) {
-        btn.display.style = 'none';
+        instr.style.display = 'none';
     } else {
-        btn.display.style = 'block';
+        instr.style.display = 'block';
     }
 }
 
 
+
 function init() {
     const questionMark = document.querySelector('#help');
-    const btn = document.querySelector('#xbutton');
 
     if (instr) {
-        questionMark.addEventListener('click', showInstr, false);
-        btn.addEventListener('click', visibilityBtn, false);
+        questionMark.addEventListener('click', visibility, false);
     } 
 }
 
