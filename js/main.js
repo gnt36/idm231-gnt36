@@ -20,8 +20,6 @@ function visibility() {
     }
 }
 
-
-
 function init() {
     const questionMark = document.querySelector('#help');
 
@@ -32,8 +30,25 @@ function init() {
 
 init();
 
- //^ trying to link the ? and instr element so that I can have the instr appear on click //
+function closeBtn() {
+    if (btn) {
+        btn.addEventListener('click', hideInstr, false);
+    }
+}
 
+closeBtn();
+
+
+
+
+function imageLayout() {
+    const godSelected = document.querySelectorAll('div.gods');
+
+    if (instr) {
+        godSelected.style.display = 'inline';
+    }
+        
+}
 
 const signs = [
     {
