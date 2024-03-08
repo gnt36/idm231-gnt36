@@ -21,6 +21,7 @@ html {
     --color-darkPurple: #453E45;
     --color-light: #fafafa;
     --color-dark: #131313;
+    --color-grey: grey;
     /* Add in font thingys*/
     --font-special: 'olympic', 'Times New Roman', Times, serif;
     --font--normal: 'lumina', 'Times New Roman', Times, serif;
@@ -87,28 +88,58 @@ main {
     grid-gap: 48px;
 } 
 
-#helpInstructions {
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: var(--color-dark); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.help_content {
     background-color: var(--color-darkPurple);
+    margin: 15% auto; 
+    padding: 24px;
+    width: 80%; 
+
     font-family: var(--font--normal);
     color: var(--color-light);
     font-size: 1.5rem;
 
-    margin: auto;
-
     display: grid;
-    grid-template-rows: auto auto;
-    text-align: center;
+    grid-template-rows: 5% auto;
+    justify-items: end;
 }
 
 #xbutton {
+    width: 16px;
     border: none;
-    padding: 0px;
+    margin-right: 20px;
 
     background-color: var(--color-darkPurple);
     color: var(--color-light);
 
     font-family: var(--font--normal);
     font-size: 24px;
+
+    display: grid;
+    justify-items: end;
+}
+
+#xbutton:hover {
+    color: var(--color-grey);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.helpPara {
+    display: grid;
+    justify-items: center;
+    text-align: center;
 }
 
 footer {
