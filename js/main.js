@@ -41,19 +41,11 @@ closeBtn();
 
 
 
-function imageLayout() {
-    const godSelected = document.querySelectorAll('div.gods');
-
-    if (instr) {
-        godSelected.style.display = 'inline';
-    }
-        
-}
-
 const signs = [
     {
         name: 'Aries',
         god: 'Ares',
+        URL: "/media/sounds/ares.mp3",
         description: 'Ares, the dynamic god of war, embodies the spirit of this bold and passionate zodiac sign. If you happen to be an Aries, chances are you resonate with the formidable characteristics of this mighty god. Those born under the Aries constellation are driven by a relentless pursuit of power, fueled by ambition, and guided by unwavering courage.'
     },
     {
@@ -115,9 +107,7 @@ const signs = [
 
 console.log(signs);
 
-for (let i = 0; i < 12 ; i++){
-    const button = document.createElement('button');
-}
+
 
 //How to attach buttons to pictures?
 
