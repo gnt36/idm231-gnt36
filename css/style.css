@@ -142,6 +142,45 @@ main {
     text-align: center;
 }
 
+.control {
+    font-family: var(--font--normal);
+    color: var(--color-dark);
+}
+
+.control button {
+    background-color: var(--color-lightPurple);
+    border-color: var(--color-darkPurple);
+    color: var(--color-dark);
+    font-family: var(--font--normal);
+    font-size: 1rem;
+
+    display: flex;
+    align-content: end;
+
+}
+
+input {
+    background-color: var(--color-lightPurple);
+    border-color: var(--color-darkPurple);
+    color: var(--color-darkPurple);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    outline: none;
+    padding: 0.75rem 0.5rem;
+    width: 100%;
+  }
+
+div.gods button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: contents;
+  }
+
+img:hover {
+    box-shadow: 8px 4px 4px var(--color-darkPurple);
+  }
+
 footer {
     background-color: var(--color-darkPurple);
     
@@ -158,8 +197,4 @@ footer p {
 
 footer.index {
     position: static;
-}
-
-footer.help {
-    position: fixed;
 }
