@@ -114,11 +114,9 @@ const signs = [
 console.log(signs);
 
 
-//How to attach buttons to pictures?
-
-//Then I want to have a opaque div appear with all information when the button is clicked on.
 
 
+//assign month to something
 
 if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
     astrological_sign = 'Capricorn'
