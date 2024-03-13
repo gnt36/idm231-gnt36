@@ -181,6 +181,38 @@ img:hover {
     box-shadow: 8px 4px 4px var(--color-darkPurple);
   }
 
+.newPart {
+    color: var(--color-dark);
+    font-size: 1rem;
+    
+    background-color: var(--color-lightPurple);
+    border: thick double var(--color-darkPurple);
+    z-index: 1;
+
+    width: max-content;
+    height:max-content;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.normal {
+    font-family: var(--font--normal);
+}
+
+.heading {
+    font-family: var(--font-special);
+}
+
 footer {
     background-color: var(--color-darkPurple);
     
