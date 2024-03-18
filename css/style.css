@@ -181,7 +181,7 @@ img:hover {
     box-shadow: 8px 4px 4px var(--color-darkPurple);
   }
 
-.newPart {
+#newPart {
     color: var(--color-dark);
     font-size: 1rem;
     
@@ -199,10 +199,8 @@ img:hover {
     
     margin: auto;
 
-    display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .normal {

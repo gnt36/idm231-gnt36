@@ -7,6 +7,8 @@ const btn = document.querySelector('#xbutton');
 const myNewDiv = document.getElementById('newPart');
 const gods = document.querySelectorAll('div.gods');
 
+const newBtn = document.querySelector('#xbtn');
+
 function hideInstr() {   
    if (instr) {
         instr.style.display = 'none';
@@ -95,18 +97,28 @@ const signs = [
 
 console.log(signs);
 
-
-
-
 function showDiv() {
     myNewDiv.hidden = !myNewDiv.hidden;
 }
 
 for (let i = 0; i < 12; i++) {
-    gods.addEventListener('click', showDiv, false);
+    gods[i].addEventListener('click', showDiv, false);
+}
+
+function disappear() {
+    if (myNewDiv) {
+        myNewDiv.style.display = 'none';
+    }
 }
 
 
+function closeNewDiv() {
+    newBtn.addEventListener('click', disappear, false);
+}
+
+closeNewDiv();
+
+// the div isn't working
 
 
 
