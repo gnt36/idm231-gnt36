@@ -30,7 +30,6 @@ html {
 body {
     background-color: var(--color-lightPurple);
     color: var(--color-dark);
-    /* font-family*/
     margin: 0 0;
 
     display: flex;
@@ -81,11 +80,11 @@ nav ul li button#help {
 }
 
 main {
-    margin: 65px 35px 45px;
+    margin: 65px auto 45px;
     
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 48px;
+    grid-template-columns: auto auto;
+    grid-gap: 16px;
 } 
 
 .overlay {
@@ -144,10 +143,10 @@ main {
 
 .control {
     font-family: var(--font--normal);
-    color: var(--color-dark);
+    color: var(--color-dark);   
 }
 
-.control button {
+#submitBtn {
     background-color: var(--color-lightPurple);
     border-color: var(--color-darkPurple);
     color: var(--color-dark);
@@ -170,6 +169,12 @@ input {
     width: 100%;
   }
 
+.submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 div.gods button {
     margin: 0;
     padding: 0;
@@ -184,13 +189,14 @@ img:hover {
 #newPart {
     color: var(--color-dark);
     font-size: 1rem;
+    font-family: var(--font-special);
     
     background-color: var(--color-lightPurple);
     border: thick double var(--color-darkPurple);
     z-index: 1;
 
-    width: max-content;
-    height:max-content;
+    width: 70ch;
+    height:min-content;
     position: absolute;
     top:0;
     bottom: 0;
@@ -198,17 +204,26 @@ img:hover {
     right: 0;
     
     margin: auto;
-
-    align-items: center;
-    justify-content: center;
+    padding: 24px 36px;
 }
 
-.normal {
+#xbtn {
+    width: 16px;
+    border: none;
+    margin-right: 20px;
+
+    background-color: var(--color-lightPurple);
+    color: var(--color-dark);
+
     font-family: var(--font--normal);
+    font-size: 24px;
+
+    display: grid;
+    justify-content: end;
 }
 
-.heading {
-    font-family: var(--font-special);
+p.text {
+    padding: 36px auto;
 }
 
 footer {
